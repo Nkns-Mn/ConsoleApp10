@@ -15,7 +15,7 @@ namespace ConsoleApp10
             info.ShowInfo();
         }
     }
-    class TestPerson
+    class TestPerson //基底クラス・名前・年齢
     {
         public string name { get; set; }
         public int age { get; set; }
@@ -31,7 +31,7 @@ namespace ConsoleApp10
         }
         }
 
-    class TestInfo : TestPerson
+    class TestInfo : TestPerson　//派生クラス・身長・体重
     {
         public int height { get; set; }
         public int weight { get; set; }
