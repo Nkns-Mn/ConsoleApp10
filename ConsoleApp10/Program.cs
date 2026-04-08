@@ -17,34 +17,34 @@ namespace ConsoleApp10
     }
     class TestPerson //基底クラス・名前・年齢
     {
-        public string name { get; set; }
-        public int age { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
         public TestPerson (string name, int age)
         {
-            this.name = name;
-            this.age = age;
+            this.Name = name;
+            this.Age = age;
         }
         public void ShowPerson()
         {
             Console.WriteLine("基底クラス");
-            Console.WriteLine($"名前：{name},年齢：{age}");
+            Console.WriteLine($"名前：{Name},年齢：{Age}");
         }
         }
 
-    class TestInfo : TestPerson　//派生クラス・身長・体重
+    class TestInfo : TestPerson //派生クラス・身長・体重
     {
-        public int height { get; set; }
-        public int weight { get; set; }
+        public int Height { get; set; }
+        public int Weight { get; set; }
         public TestInfo(string name, int age, int height, int weight)
            : base(name, age)
         {
-            this.height = height;
-            this.weight = weight;
+            this.Height = height;
+            this.Weight = weight;
         }
         public void ShowInfo()
         {
             Console.WriteLine("派生クラス");
-            Console.WriteLine($"身長：{height},体重：{weight}");
+            Console.WriteLine($"身長：{Height},体重：{Weight}");
         }
     }
 }
