@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp10
+namespace ConsoleApp10 //課題32-19
 {
     internal class Program
     {
